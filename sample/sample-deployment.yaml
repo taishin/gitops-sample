@@ -13,7 +13,7 @@ spec:
         app: sample-app
     spec:
       containers:
-      - name: target1
-        image: 235677655129.dkr.ecr.ap-northeast-1.amazonaws.com/eks-test-app:target1
+      - name: nginx-container
+        image: nginx:1.13
         ports:
         - containerPort: 80
