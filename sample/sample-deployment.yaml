@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample2-deployment
+  name: sample22-deployment
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: sample2-app
+      app: sample22-app
   template:
     metadata:
       labels:
-        app: sample2-app
+        app: sample22-app
     spec:
       containers:
       - name: target1

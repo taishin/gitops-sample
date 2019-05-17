@@ -1,14 +1,14 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: sample2-lb
+  name: sample22-lb
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
     service.beta.kubernetes.io/aws-load-balancer-additional-resource-tags: "environment=test1"
 spec:
   type: LoadBalancer
   selector:
-    app: sample2-app
+    app: sample22-app
   ports:
   - name: "http-port"
     protocol: "TCP"
